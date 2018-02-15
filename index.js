@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+require('dotenv').config()
 
 var bodyParser = require('body-parser');
 const expressValidator = require('express-validator');

@@ -72,7 +72,7 @@
 			uri: 'https://api.pagar.me/1/transactions',
 			method: 'POST',
 			json: {
-				api_key: "ak_test_WHgSu2XFmvoopAZMetV3LfA2RfEEQg",
+				api_key: process.env.APIKEY,
 				amount: req.pokemon.price * Math.abs(req.body.quantity),
 				card_number: "4024007138010896",
 				card_expiration_date: "1050",
